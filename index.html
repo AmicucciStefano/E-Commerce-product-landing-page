@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33ad61f599.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar center">
+            <div class="left-navbar">
+                <i class="menu-toggle fa-solid fa-bars"></i>
+                <h2 class="title">sneakers</h2>
+                <ul class="links">
+                    <i class="cross fa-solid fa-xmark"></i>
+                    <li><a class="link" href="#">Collections</a></li>
+                    <li><a class="link" href="#">Men</a></li>
+                    <li><a class="link" href="#">Women</a></li>
+                    <li><a class="link" href="#">About</a></li>
+                    <li><a class="link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-navbar">
+                <div class="div-cart">
+                    <p class="amountInCart"></p>
+                    <i class="cart fa-solid fa-cart-shopping"></i>
+                </div>
+                <img class="avatar" src="images/image-avatar.png" alt="Avatar">
+            </div>
+        </nav>
+    </section>
+    <div class="modal center">
+        <h4 class="modal-title">Cart</h4>
+        <div class="div-modal-text">
+            <p class="modal-text">Your cart is empty.</p>
+        </div>
+    </div>
+    <div class="div-sections center">
+        <section>
+            <div class="images center">
+                <i class="arrowleft fa-solid fa-circle-chevron-left"></i>
+                <div class="carrusel">
+                    <div class="slide">
+                        <img class="image first-pic" src="images/image-product-1.jpg" alt="zapatillas 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/image-product-2.jpg" alt="zapatillas 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/image-product-3.jpg" alt="zapatillas 3">
+                    </div>
+                    <div class="slide">
+                        <img class="last-pic" src="images/image-product-4.jpg" alt="zapatillas 4">
+                    </div>
+                </div>
+                <i class="arrowright fa-solid fa-circle-chevron-right"></i>
+                <div class="allimages">
+                    <img id="0" class="thumbnail active" src="images/image-product-1-thumbnail.jpg" alt="image1">
+                    <img id="1" class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="image2">
+                    <img id="2" class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="image3">
+                    <img id="3" class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="image4">
+                </div>
+            </div>
+            <div class="modal-image hidden">
+                <i class="modalcross fa-regular fa-circle-xmark"></i>
+
+            </div>
+        </section>
+        <section>
+            <div class="box-text center">
+                <span>SNEAKER COMPANY</span>
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                    durable rubber outer sole,
+                    they'll withstand everything the weather can offer.</p>
+                <div class="prices">
+                    <div class="inside-prices">
+                        <p class="price">$125.00</p>
+                        <p class="discount">50%</p>
+                    </div>
+                    <del class="pricebefore">$250.00</del>
+                </div>
+                <div class="buttons">
+                    <div class="count">
+                        <button class="rest">-</button>
+                        <p class="number">0</p>
+                        <button class="add">+</button>
+                    </div>
+                    <div class="button-addtocart">
+                        <i class="cart fa-solid fa-cart-shopping"></i>
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
